@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/students-api", {
-
+mongoose.connect("mongodb://localhost:27017/ProgrammersApi", {
 }).then(()=>{
-    console.log("Connection is successful");
+    console.log("Connected to the database successfully!");
 }).catch((e)=>{
-    console.log("No connection");
+    console.log("Can not connect to the database!");
 })
